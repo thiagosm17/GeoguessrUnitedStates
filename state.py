@@ -13,7 +13,7 @@ class State(turtle.Turtle):
 
     def is_it_already_guessed(self):
         for guesses in self.correctGuesses:
-            if self.answer_input == guesses:
+            if self.answer_input.lower() == guesses.lower():
                 return True
         return False
 
